@@ -12,22 +12,27 @@ sudo apt install php-simplexml -y
 sudo apt install composer -y
 sudo apt install nodejs npm -y
 sudo service apache2 restart
+sudo a2enmod rewrite
+sudo service apache2 restart
 
-#wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip
-#
+# COMPOSER_DISCARD_CHANGES=true composer update --no-interaction
+
+# git config core.fileMode false
+
+# wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip
 
 
-#sudo mysql -p -u root
-#CREATE USER 'pmauser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password_here';
-#GRANT ALL PRIVILEGES ON *.* TO 'pmauser'@'localhost';
 
-#sudo mysql -p -u root
-#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'enter_password_here';
-#FLUSH PRIVILEGES;
+# sudo mysql -p -u root
+# CREATE USER 'pmauser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password_here';
+# GRANT ALL PRIVILEGES ON *.* TO 'pmauser'@'localhost';
+
+# sudo mysql -p -u root
+# ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'enter_password_here';
+# FLUSH PRIVILEGES;
 
 # <Directory /var/www/html/production>
 #         Options Indexes FollowSymLinks MultiViews
 #         AllowOverride All
 #         Require all granted
-#     </Directory>
-# </VirtualHost>
+# </Directory>
