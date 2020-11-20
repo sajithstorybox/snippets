@@ -7,6 +7,7 @@ sudo apt install php libapache2-mod-php php-mysql -y
 sudo apt install php-mbstring -y
 sudo apt install php-curl -y
 sudo apt install php-zip -y
+sudo apt install php-bz2 -y
 sudo apt install php-dom -y
 sudo apt install php-simplexml -y
 sudo apt install composer -y
